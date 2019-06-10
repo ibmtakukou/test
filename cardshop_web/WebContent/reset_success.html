@@ -1,0 +1,27 @@
+<! DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+	<title><center>リセット完了</center></title>
+</head>
+<script type="text/javascript">
+onload = function(){
+	setInterval(go,1000);
+};
+var x = 5;
+function go(){
+	x --;
+	if (x>=0){
+		document.getElementById("sp").innerHTML=x+"秒後、トップページを戻ります。";
+	}
+	else{
+		location.href = "Top.html";
+	}
+}
+</script>
+<body>
+<h1><center>リセット完了！</center>
+<h2><center><div id = "sp"></div></center></h2>
+<h1><center><a href="Top.html">トップに戻る</a></center></h1>
+</body>
+</html>

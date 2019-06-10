@@ -1,0 +1,30 @@
+<! DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <center><title>
+追加完了
+</title>
+</head>
+<script type="text/javascript">
+onload = function(){
+	setInterval(go,1000);
+};
+var x = 5;
+function go(){
+	x --;
+	if (x>=0){
+		document.getElementById("sp").innerHTML=x+"秒後、トップページを戻ります。";
+	}
+	else{
+		location.href = "Top.html";
+	}
+}
+</script>
+<body>
+<h1>追加完了！</h1>
+<h2><div id = "sp"></div></h2>
+<a href=Top.html>トップに戻る</a></center>
+</body>
+</html>
